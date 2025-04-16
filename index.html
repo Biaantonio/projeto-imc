@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de IMC</title>
+    <link rel="stylesheet" href="./src/style.css">
+      
+      </head>
+<body>
+    <div class="container">
+        <h1>🧮Simulador de IMC </h1>
+        <form id="imc-form">
+            <label for="peso"></label>
+            <input type="number" id="peso" placeholder="Peso (kg)" required>
+
+            <label for="altura"></label>
+            <input type="number" step="0.01" id="altura" placeholder="Altura (m)" required>
+
+            <button type="submit">Calcular IMC</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <h3>Resultado: </h3>
+            <h2>Seu IMC é: <span id="imc-valor"></span></h2>
+            <p><h2>Classificação: <span id="categoria"></span></h2> </p>
+        </div>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
